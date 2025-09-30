@@ -19,14 +19,15 @@ function App() {
       <h1>Rick and Morty</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+          Menu
         </button>
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
+          Use this for Rick and Morty API <code>https://rickandmortyapi.com/api</code>
         </p>
       </div>
       <p className="read-the-docs">
-        first one good job
+        Group 18 API
       </p>
     </>
   )
