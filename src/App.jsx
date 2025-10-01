@@ -20,7 +20,7 @@ function App() {
     <>
       <h1>Rick and Morty</h1>
       <div className="card">
-        <button onClick={() => setMenuOpen(!menuOpen)}>
+        <button className="menu-button" onClick={() => setMenuOpen(!menuOpen)}>
           Menu
         </button>
         {menuOpen && (
