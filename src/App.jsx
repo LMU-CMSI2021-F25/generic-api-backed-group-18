@@ -14,7 +14,11 @@ function App() {
     if(category == "characters") endpoint = "https://rickandmortyapi.com/api/character"
     if (category == "locations") endpoint = "https://rickandmortyapi.com/api/location"
     if (category == "episodes") endpoint = "https://rickandmortyapi.com/api/episode"
-  }, [category])
+    fetch(endpoint)
+    .then(res=>res.json())
+    .then(result=>setData(result.results))
+    .catch(err=>console.error(err));
+  }, [category]);
 
   return (
     <>
@@ -30,6 +34,18 @@ function App() {
             <button onClick={() => setCategory("episodes")}>Episodes</button>
           </div>
         )}
+      </div>
+      <div className='data-display'>
+        {data && data.length > 0 ? (
+          <ul>
+            {data.map((item)=>(
+              <li key={item.id}>{item.name || item.title}</li>
+            ))}
+          </ul>
+        ):(
+          <p>No data loaded</p>
+        )
+        }
       </div>
       <p className="read-the-docs">
         Group 18 API
