@@ -35,19 +35,16 @@ function App() {
       </div>
       <div className='data-display'>
         {data && data.length > 0 ? (
-          <ul>
+          <ol>
             {data.map((item)=>(
               <li key={item.id}>{item.name || item.title}</li>
             ))}
-          </ul>
+          </ol>
         ):(
           <p>No data loaded</p>
         )
         }
       </div>
-      <p className="read-the-docs">
-        Group 18 API
-      </p>
     </>
   )
 }

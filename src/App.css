@@ -86,8 +86,16 @@ h1{
 .menu-item:active {
   transform: scale(1);
 }
-p{
-  font-family: 'Bitcount Prop Single Ink', sans-serif;
+.data-display {
   color: brown;
+  font-family: 'Bitcount Prop Single Ink', sans-serif;
   font-size: 18px;
+  margin: 5px 0;
+}
+h1 {
+  background-color: white;
+  padding: 5px;
+  text-align: center;
+  position: sticky;
+  box-shadow: 0 4px 15px black;
 }
