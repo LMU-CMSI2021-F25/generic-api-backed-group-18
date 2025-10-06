@@ -1,4 +1,4 @@
-In GetData() I was struggling to use the correct fetch code and I used ChatGPT to get this:
+In useEffect() I was struggling to use the correct fetch code and I used ChatGPT to get this:
     fetch(endpoint)
     .then(res=>res.json())
     .then(result=>setData(result.results))
