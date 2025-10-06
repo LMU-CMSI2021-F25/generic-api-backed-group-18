@@ -8,7 +8,7 @@ function App() {
   const[data, setData] = useState([])
   const[category, setCategory] = useState(null)
 
-  useEffect(() => {
+  GetData(() => {
     if (!category) return
     let endpoint = ""
     if(category == "characters") endpoint = "https://rickandmortyapi.com/api/character"
