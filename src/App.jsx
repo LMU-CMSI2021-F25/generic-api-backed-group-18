@@ -1,6 +1,4 @@
 import { useState, useEffect } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
@@ -29,9 +27,9 @@ function App() {
         </button>
         {menuOpen && (
           <div className="menu">
-            <button onClick={()=>setCategory("characters")}>Characters</button>
-            <button onClick={() => setCategory("locations")}>Locations</button>
-            <button onClick={() => setCategory("episodes")}>Episodes</button>
+            <button className="menu-item" onClick={()=>setCategory("characters")}>Characters</button>
+            <button className="menu-item" onClick={() => setCategory("locations")}>Locations</button>
+            <button className="menu-item" onClick={() => setCategory("episodes")}>Episodes</button>
           </div>
         )}
       </div>
