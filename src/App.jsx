@@ -5,6 +5,7 @@ function App() {
   const [menuOpen, setMenuOpen] = useState(false)
   const[data, setData] = useState([])
   const[category, setCategory] = useState(null)
+  const [selectedCharacter, setSelectedCharacter] = useState(null)
 
   useEffect(() => {
     if (!category) return
@@ -44,14 +45,34 @@ function App() {
         {data && data.length > 0 ? (
           <ol>
             {data.map((item)=>(
-              <li key={item.id}>{item.name || item.title}</li>
+              <li key={item.id} onClick={() => setSelectedCharacter(item)}>
+              {item.name || item.title}
+              </li>
             ))}
           </ol>
         ):(
-          <p>No data loaded</p>
+          <p>No data loaded!</p>
         )
         }
       </div>
+      {selectedCharacter &&(
+        <div className="character-details">
+          <h2>{selectedCharacter.name}</h2>
+          {selectedCharacter.image && (
+            <img
+              src={selectedCharacter.image}
+              alt={selectedCharacter.name}
+              className="image"
+            />
+          )}
+          {selectedCharacter.species && <p>Species: {selectedCharacter.species}</p>}
+          {selectedCharacter.status && <p>Status: {selectedCharacter.status}</p>}
+          {selectedCharacter.gender && <p>Gender: {selectedCharacter.gender}</p>}
+          {selectedCharacter.origin && selectedCharacter.origin.name && (
+            <p>Origin: {selectedCharacter.origin.name}</p>
+          )}
+        </div>
+      )}
     </>
   )
 }
