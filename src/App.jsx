@@ -41,7 +41,8 @@ function App() {
           </div>
         )}
       </div>
-      <div className='data-display'>
+      <div className="data-container">
+        <div className="data-display">
         {data && data.length > 0 ? (
           <ol>
             {data.map((item)=>(
@@ -52,9 +53,9 @@ function App() {
           </ol>
         ):(
           <p>No data loaded!</p>
-        )
-        }
-      </div>
+        )}
+        </div>
+
       {selectedCharacter &&(
         <div className="character-details">
           <h2>{selectedCharacter.name}</h2>
@@ -73,7 +74,8 @@ function App() {
           )}
         </div>
       )}
-    </>
+    </div>
+  </>
   )
 }
 
