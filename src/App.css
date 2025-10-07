@@ -43,10 +43,23 @@
   padding: 2em;
 }
 
-h1{
+h1 {
   font-family: 'Bitcount Prop Single Ink', sans-serif;
   color: #00ff90;
   text-shadow: 2px 2px 5px brown;
+}
+
+.image-container {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px black;
 }
 
 .menu-button {
