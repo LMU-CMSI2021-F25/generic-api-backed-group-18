@@ -56,7 +56,7 @@ function App() {
         )}
         </div>
 
-      {selectedCharacter &&(
+      {category === "characters" && selectedCharacter && (
         <div className="character-details">
           <h2>{selectedCharacter.name}</h2>
           {selectedCharacter.image && (
@@ -71,6 +71,28 @@ function App() {
           {selectedCharacter.gender && <p>Gender: {selectedCharacter.gender}</p>}
           {selectedCharacter.origin && selectedCharacter.origin.name && (
             <p>Origin: {selectedCharacter.origin.name}</p>
+          )}
+        </div>
+      )}
+
+      {category === "locations" && selectedCharacter && (
+        <div className="character-details">
+          <h2>{selectedCharacter.name}</h2>
+          {selectedCharacter.type && <p>Type: {selectedCharacter.type}</p>}
+          {selectedCharacter.dimension && <p>Dimension: {selectedCharacter.dimension}</p>}
+          {selectedCharacter.residents && (
+            <p>Residents: {selectedCharacter.residents.length}</p>
+          )}
+        </div>
+      )}
+
+      {category === "episodes" && selectedCharacter && (
+        <div className="character-details">
+          <h2>{selectedCharacter.name}</h2>
+            {selectedCharacter.episode && <p>Episode Code: {selectedCharacter.episode}</p>}
+            {selectedCharacter.air_date && <p>Air Date: {selectedCharacter.air_date}</p>}
+            {selectedCharacter.characters && (
+              <p>Characters: {selectedCharacter.characters.length}</p>
           )}
         </div>
       )}

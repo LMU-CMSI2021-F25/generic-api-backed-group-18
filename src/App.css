@@ -60,10 +60,12 @@ h1 {
 }
 
 .image {
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
   border-radius: 12px;
   box-shadow: 0 4px 15px black;
+  margin: 0 auto;
+  display: block;
 }
 
 .menu-button {
@@ -129,6 +131,58 @@ h1 {
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
-  gap: 20px;
+  gap: 40px;
   margin-top: 20px;
+  min-height: 500px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.data-display ol {
+  list-style: none;
+  padding: 0;
+}
+
+.data-display li {
+  background-color: white;
+  color: brown;
+  font-family: 'Bitcount Prop Single Ink', sans-serif;
+  font-size: 18px;
+  margin: 8px 0;
+  padding: 10px 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px black;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.data-display li:hover {
+  background-color: #C4A484;
+  transform: scale(1.05);
+}
+
+.character-details {
+  background-color: white;
+  color: brown;
+  font-family: 'Bitcount Prop Single Ink', sans-serif;
+  font-size: 18px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px black;
+  max-width: 320px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.character-details img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px black;
+  margin-top: 10px;
+}
+
+.character-details p {
+  margin: 5px 0;
 }
