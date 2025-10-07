@@ -21,6 +21,13 @@ function App() {
   return (
     <>
       <h1>Rick and Morty</h1>
+      <div className="image-container">
+        <img 
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%2Fid%2FOIP.9CbwKa38tn7S23VkCHE7PQHaEK%3Fcb%3D12%26pid%3DApi&f=1&ipt=5cf95fbc4a6db24096bad7567f0ea034d7f5993bfff677ff00ebd14b50de6b23&ipo=images"
+          alt="Rick and Morty Image"
+          className="image"
+        />
+      </div>
       <div className="card">
         <button className="menu-button" onClick={() => setMenuOpen(!menuOpen)}>
           Menu
