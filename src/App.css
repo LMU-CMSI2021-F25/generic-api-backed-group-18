@@ -1,0 +1,188 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background: linear-gradient(to right,#90EE90,#C4A484);
+}
+
+@font-face {
+  font-family: 'Bitcount Prop Single Ink';
+  src: url('./assets/fonts/BitcountPropSingleInk.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+h1 {
+  font-family: 'Bitcount Prop Single Ink', sans-serif;
+  color: #00ff90;
+  text-shadow: 2px 2px 5px brown;
+}
+
+.image-container {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px
+}
+
+.image {
+  max-width: 80%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px black;
+  margin: 0 auto;
+  display: block;
+}
+
+.menu-button {
+  background-color: white;
+  color: brown;
+  font-family: 'Bitcount Prop Single Ink', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.menu-button:hover {
+  background-color: #C4A484;
+  transform: scale(1.05);
+}
+
+.menu-button:active {
+  transform: scale(1);
+}
+
+.menu-item {
+  font-family: 'Bitcount Prop Single Ink', sans-serif;
+  background-color: white;
+  color: brown;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 12px;
+  margin: 5px;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.menu-item:hover {
+  background-color: #C4A484;
+  transform: scale(1.05);
+}
+
+.menu-item:active {
+  transform: scale(1);
+
+}
+.data-display {
+  color: brown;
+  font-family: 'Bitcount Prop Single Ink', sans-serif;
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+h1 {
+  background-color: white;
+  padding: 5px;
+  text-align: center;
+  position: sticky;
+  box-shadow: 0 4px 15px black;
+}
+
+.data-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  margin-top: 20px;
+  min-height: 500px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.data-display ol {
+  list-style: none;
+  padding: 0;
+}
+
+.data-display li {
+  background-color: white;
+  color: brown;
+  font-family: 'Bitcount Prop Single Ink', sans-serif;
+  font-size: 18px;
+  margin: 8px 0;
+  padding: 10px 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px black;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.data-display li:hover {
+  background-color: #C4A484;
+  transform: scale(1.05);
+}
+
+.character-details {
+  background-color: white;
+  color: brown;
+  font-family: 'Bitcount Prop Single Ink', sans-serif;
+  font-size: 18px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px black;
+  max-width: 320px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.character-details img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px black;
+  margin-top: 10px;
+}
+
+.character-details p {
+  margin: 5px 0;
+}
